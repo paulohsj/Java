@@ -5,7 +5,7 @@ public class ScreenMatch {
 
         int anoDeLançamento = 2022;
         System.out.println("Ano de lançamento: " + anoDeLançamento);
-        boolean incluidoNoPlano = true;
+        boolean = true;
         double mediaDoFilme = (9.8 + 6.3 + 7.0) / 3;
         //Média calculada com base em 3 avaliações
         System.out.println("Média dos filmes: " + mediaDoFilme);
