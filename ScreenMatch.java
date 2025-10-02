@@ -22,8 +22,10 @@ public class ScreenMatch {
         //Teste de """ para string longa """
         System.out.println(sinopseDoFilme);
 
-        int classificacao;
-        classificacao = (int) (mediaDoFilme /2);
+        int classificacao = (int) (mediaDoFilme /2);
         System.out.println("Classificação: " + classificacao + " estrelas");
+
+        
+
     }
 }
