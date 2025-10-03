@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Desafio",
+            "request": "launch",
+            "mainClass": "Desafio",
+            "projectName": "Java_a7f85e01"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"

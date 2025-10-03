@@ -1,8 +1,6 @@
 import java.util.Scanner;
 
 
-
-
 public class Desafio {
     public static void main(String[] args) {
         limparConsole();
@@ -39,7 +37,8 @@ public class Desafio {
         }
     }
     
-    public static void bancoDigital() { 
+    public static void bancoDigital() {
+        int opcao; 
         Scanner leitor = new Scanner(System.in);
 
         //Dados fictícios do banco e cliente     
@@ -48,7 +47,7 @@ public class Desafio {
         System.out.println("Nome do Cliente: Fulano de Tal");
         String tipoDeConta = "Conta Corrente";
         System.out.println("Tipo de Conta: " + tipoDeConta);
-        double saldoAtualDaConta = 1000.00;
+        Float saldoAtualDaConta = 1000.00f;
         System.out.println("Seu Saldo é de: R$ " + String.format("%.2f", saldoAtualDaConta));
         System.out.println("\n******************************");
         System.out.println("\nPressione ENTER para continuar."); //Pausa para o usuário ver os dados antes de limpar o console
@@ -57,9 +56,7 @@ public class Desafio {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-        int opcao; //não sei 
-        
+         
         //Menu de opções
         do {
         limparConsole();
@@ -83,7 +80,7 @@ public class Desafio {
                 case 2:
                     limparConsole();
                     System.out.println("Qual valor você deseja depositar? ");
-                    double valorDeposito = leitor.nextDouble();
+                    Float valorDeposito = leitor.nextFloat();
                     limparConsole();
                     System.out.println("Você Depositou: R$ " + String.format("%.2f", valorDeposito));
                     saldoAtualDaConta += valorDeposito;
@@ -94,7 +91,7 @@ public class Desafio {
                 case 3: 
                     limparConsole();
                     System.out.println("Qual valor você deseja transferir? ");
-                    double valorTransferencia = leitor.nextDouble();
+                    Float valorTransferencia = leitor.nextFloat();
                     if (valorTransferencia > saldoAtualDaConta) {
                         limparConsole();
                         System.out.println("Saldo insuficiente para essa transferência. Seu saldo atual é de: R$ " + String.format("%.2f", saldoAtualDaConta));
