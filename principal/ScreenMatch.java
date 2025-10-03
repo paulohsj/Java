@@ -6,7 +6,6 @@ public class ScreenMatch {
         meuFilme.anoDeLançamento = 2022;
         meuFilme.duracaoEmMinutos = 130;
 
-        System.out.println("Filme: " + meuFilme.nomeDoFilme);
-        System.out.println("Ano de lançamento: " + meuFilme.anoDeLançamento);
+        meuFilme.exibeFichaTecnica();
     }
 }
