@@ -1,3 +1,4 @@
+package primeirosexercicios;
 public class ExerciciosBonus {
     public static void main (String[] args) {
         exercicio ();
